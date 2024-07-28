@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Scholarship Form</title>
+</head>
+<body>
+    <h1>Scholarship Form</h1>
+    <form method="POST" action="/scholarship">
+        <label for="scholarship_name">Scholarship Name:</label>
+        <input type="text" id="scholarship_name" name="scholarship_name" required><br>
+
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" required><br>
+
+        <label for="eligibility">Eligibility:</label>
+        <input type="text" id="eligibility" required><br>
+
+        <label for="application_deadline">Application Deadline:</label>
+        <input type="date" id="application_deadline" required><br>
+
+        <label for="income_limit">Income Limit:</label>
+        <input type="number" id="income_limit" required><br>
+
+        <label for="academic_performance_min">Academic Performance Minimum:</label>
+        <input type="number" step="0.01" id="academic_performance_min" required><br>
+
+        <label for="residency_requirement">Residency Requirement:</label>
+        <input type="text" id="residency_requirement" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="special_category">Special Category:</label>
+        <input type="text" id="special_category" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul>
+                {% for category, message in messages %}
+                    <li class="{{ category }}">{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+</body>
+</html>

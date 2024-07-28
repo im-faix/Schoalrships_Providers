@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Student</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 25rem;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        form {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        label {
+            font-size: 1.2em;
+            margin: 10px 0 5px;
+        }
+        input[type="text"], input[type="date"], input[type="number"], select {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            background: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Student</h1>
+    <form action="{{ url_for('add_student') }}" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+
+        <label for="income">Income:</label>
+        <input type="number" id="income" name="income" required><br>
+
+        <label for="academic_performance">Academic Performance:</label>
+        <input type="number" step="0.01" id="academic_performance" name="academic_performance" required><br>
+
+        <label for="enrollment_status">Enrollment Status:</label>
+        <input type="text" id="enrollment_status" name="enrollment_status" required><br>
+
+        <label for="class">Class:</label>
+        <input type="text" id="class" name="class" required><br>
+
+        <label for="institute_name">Institute Name:</label>
+        <input type="text" id="institute_name" name="institute_name" required><br>
+
+        <label for="board">Board:</label>
+        <input type="text" id="board" name="board" required><br>
+
+        <label for="religion">Religion:</label>
+        <input type="text" id="religion" name="religion" required><br>
+
+        <label for="caste">Caste:</label>
+        <input type="text" id="caste" name="caste" required><br>
+
+        <label for="adhar">Aadhar:</label>
+        <input type="text" id="adhar" name="adhar" required><br>
+
+        <label for="nationality">Nationality:</label>
+        <input type="text" id="nationality" name="nationality" required><br>
+
+        <label for="special_category">Special Category:</label>
+        <input type="text" id="special_category" name="special_category"><br>
+
+        <button type="submit">Add Student</button>
+    </form>
+</body>
+</html>
