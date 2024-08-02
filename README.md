@@ -37,40 +37,9 @@ A database system such as MySQL or PostgreSQL.
 
 Basic knowledge of HTML, CSS, and JavaScript.
 
-Installation Steps
-Clone the repository from GitHub to your local machine.
 
-Set up your database and import the provided schema.
 
-Configure your web server to serve the index.html file.
 
-Ensure your web server has the necessary permissions to access the files.
-
-Start the server and visit http://localhost in your browser to use the portal.
-
-How to Use
-Registration: Students fill out their details to create an account.
-
-Login: Use the created credentials to log in to the portal.
-
-Scholarship Search: View a list of scholarships that match your profile.
-
-Application: Click on the provided links to apply for scholarships.
-
-Support: Contact us for more information or assistance.
-
-Contributing to the Portal
-We encourage contributions from the community to improve the Scholarship Application Portal. Here's how you can help:
-
-Fork the repository on GitHub.
-
-Create a new branch for your feature or fix.
-
-Commit your changes with a descriptive message.
-
-Push your branch to GitHub.
-
-Open a pull request for your changes to be reviewed and merged.
 
 License Information
 This project is open-source under the MIT License. For more details, please refer to the LICENSE file.
