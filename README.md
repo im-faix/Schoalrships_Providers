@@ -1,4 +1,4 @@
-Welcome to the Scholarship Application Portal, a comprehensive online platform designed to assist students in their quest for financial aid. Our portal streamlines the process of finding and applying for scholarships, tailored to each student's unique qualifications and needs.
+<h1><b>Welcome to the Scholarship Application Portal</b></h1> A comprehensive online platform designed to assist students in their quest for financial aid. Our portal streamlines the process of finding and applying for scholarships, tailored to each student's unique qualifications and needs.
 
 Key Features
 User-Friendly Registration: New users can easily sign up and create their profiles.
@@ -24,7 +24,7 @@ Student Profile Creation Page: For setting up new student accounts.
 
 Dashboard: An overview of the student's activities and scholarship applications.
 
-Homepage: The main landing page of the portal.
+<b>Homepage: The main landing page of the portal.</b>
 
 Index Page: The initial page visitors see when they enter the website.
 
@@ -44,16 +44,4 @@ Basic knowledge of HTML, CSS, and JavaScript.
 License Information
 This project is open-source under the MIT License. For more details, please refer to the LICENSE file.
 
-Contact Information
-If you have any questions or need further assistance, please don't hesitate to contact us:
 
-Email: support@scholarshipportal.com
-Phone: +1 234 567 890
-Additional Resources
-Post Matric Scholarship for SCs: Scheme Guidelines
-
-FAQ for Academic Year 2020-21: Frequently Asked Questions
-
-User Manual for Scholarship Application: Application Submission Guide
-
-Scholarship Forms and Registration: Online Forms & Registration
